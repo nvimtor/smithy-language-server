@@ -253,6 +253,7 @@ public class SmithyLanguageServer implements
         return clientCapabilities != null
                && clientCapabilities.getTextDocument() != null
                && clientCapabilities.getTextDocument().getSynchronization() != null
+               && clientCapabilities.getTextDocument().getSynchronization().getDynamicRegistration() != null
                && clientCapabilities.getTextDocument().getSynchronization().getDynamicRegistration();
     }
 
